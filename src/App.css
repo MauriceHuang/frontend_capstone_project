@@ -1,0 +1,645 @@
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 64px;
+  padding: 0px 10px;
+}
+
+ul.menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 25px;
+}
+
+ul.menu li {
+  list-style: none;
+  font-family: "Karla";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 23px;
+  align-items: center;
+  text-transform: capitalize;
+}
+
+ul.menu li a {
+  text-decoration: none;
+  color: #1e1e1e;
+}
+
+ul.menu li a:hover {
+  color: rgb(16, 55, 2);
+}
+
+.container-menu div.btnMenu {
+  display: flex;
+}
+
+.container-menu div.menu-list {
+  display: none;
+}
+
+.panel-nav-menu {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  left: 0px;
+  background-color: #ffffff;
+  top: 0px;
+  width: 100%;
+  z-index: 1;
+  box-shadow: 0px 2px 15px #07271c;
+}
+
+.panel-nav-menu .close-menu {
+  position: absolute;
+  right: 10px;
+  margin-top: 10px;
+  padding: 5px;
+  color: rgb(12, 13, 12);
+  border: 1px solid rgb(6, 5, 5);
+  border-radius: 50px;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #495e57;
+  gap: 60px;
+  padding-bottom: 25px;
+}
+
+.header-title {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 56px;
+  line-height: 66px;
+  color: #F4CE14;
+  margin-bottom: 0px;
+}
+
+.header-sub-title {
+  font-family: "Markazi Text";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 38px;
+  color: #ffffff;
+  margin-top: 0px;
+}
+
+header p {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  color: #ffffff;
+  max-width: 320px;
+}
+
+.header-image {
+  height: 350px;
+  width: 90%;
+}
+
+.header-image img {
+  border-radius: 25px;
+}
+
+.custom-button {
+  height: 35px;
+  min-width: 200px;
+  border: 0px;
+  border-radius: 5px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  align-items: center;
+  text-align: center;
+  color: #000000;
+}
+
+.custom-button:hover {
+  cursor: pointer;
+  background: #939507 !important;
+  color: #ccd7d3 !important;
+}
+
+/* Specials Sections */
+.specials-section {
+  display: grid;
+  height: auto;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1000px, 100px, 1fr;
+  justify-items: center;
+  align-items: center;
+  gap: 25px;
+  padding: 20px;
+  max-width: 858px;
+  grid-template-areas:
+    "specials-title"
+    "specials-cards"
+    "specials-button";
+}
+
+.specials-section-title {
+  grid-area: specials-title;
+  font-family: "Karla";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 47px;
+  color: #000000;
+}
+
+.specials-section-button {
+  grid-area: specials-button;
+}
+
+.specials-section-button-text {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  align-items: center;
+  text-align: center;
+  color: #ffffff;
+  background: #000000;
+}
+
+.specials-section-cards {
+  grid-area: specials-cards;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 35px;
+  padding: 20px;
+}
+
+div .special-card {
+  display: flex;
+  flex-direction: column;
+  height: 439px;
+  max-width: 305px;
+  background-color: #edefee;
+  border-radius: 16px 16px 0px 0px;
+  padding-bottom: 20px;
+}
+
+div .special-card .special-card-image {
+  position: relative;
+  height: 180px;
+  border: 1px solid #000000;
+  border-radius: 16px 16px 0px 0px;
+}
+
+div .special-card .special-card-image img {
+  border-radius: 16px 16px 0px 0px;
+}
+
+div .special-card .special-card-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  gap: 12px;
+  height: 100%;
+  padding: 10px;
+}
+
+div .special-card-content .special-card-name-price {
+  display: flex;
+  justify-content: space-between;
+}
+
+div .special-card-name-price .special-card-name {
+  font-family: "Markazi Text";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 90%;
+  color: #000000;
+}
+
+div .special-card-name-price .special-card-price {
+  font-family: "Karla";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  color: #ee9972;
+}
+
+div .special-card-content .special-card-description p {
+  font-family: "Karla";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #495e57;
+}
+
+div .special-card-content .special-card-link img {
+  height: 12px;
+}
+
+div .special-card-content .special-card-link a {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  color: #333333;
+  text-decoration: none;
+}
+
+/* Testimonials Section */
+
+div .testimonial-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  min-height: 400px;
+  background-color: #d9d9d9;
+  padding: 42px 0px 100px 0px;
+}
+
+div .testimonial-section .testimonials-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+div .testimonial-section .testimonial-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 66px;
+}
+
+div .testimonial-section .testimonial-content h1 {
+  font-family: "Markazi Text";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 43px;
+  color: #333333;
+}
+
+div .testimonial-card {
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+  height: 175px;
+  width: 200px;
+  background-color: white;
+  padding: 29px 24px;
+}
+
+div .testimonial-card .testimonial-card-text {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+div .testimonial-card .testimonial-card-riview {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+div .testimonial-card .testimonial-card-info {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+div .testimonial-card-info .testimonial-image img {
+  height: 46px;
+  width: 47px;
+}
+
+/* Little Lemon Section */
+
+.little-lemon-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 550px;
+  padding: 10px 20px;
+}
+
+div .little-lemon-content-title h1 {
+  font-family: "Markazi Text";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 64px;
+  line-height: 77px;
+  color: #000000;
+  margin-bottom: 0px;
+}
+
+div .little-lemon-content-title h2 {
+  font-family: "Markazi Text";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 48px;
+  color: #333333;
+  margin-top: 0px;
+}
+
+div .little-lemon-content {
+  height: 468px;
+}
+
+div .little-lemon-content p {
+  font-family: "Karla";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 23px;
+  text-align: justify;
+  color: #000000;
+  max-width: 373px;
+}
+
+div .little-lemon-content-images {
+  position: relative;
+  height: 450px;
+  width: 355px;
+}
+
+div .little-lemon-content-images img {
+  height: 270px;
+  width: 220px;
+}
+
+div .little-lemon-content-images .little-lemon-content-image1 {
+  position: absolute;
+  bottom: 30px;
+  right: 1%;
+}
+
+div .little-lemon-content-images .little-lemon-content-image2 {
+  position: absolute;
+  top: 50px;
+  left: 1%;
+}
+
+/*Footer*/
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 30px;
+  align-items: center;
+  width: 100%;
+  background: #ccd7d3;
+  min-height: 250px;
+  padding: 50px 0px;
+}
+
+footer img {
+  height: 190px;
+}
+
+footer .footer-menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  width: 200px;
+}
+
+footer .footer-menu h5 {
+  margin-bottom: 0px;
+  font-family: "Karla";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 23px;
+  color: #495e57;
+}
+
+footer .footer-menu ul {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+}
+
+footer .footer-menu ul li .custom-ul-li-link {
+  font-family: "Karla";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 130%;
+  color: #333333;
+  text-decoration: none;
+}
+
+.socila-links{
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+/* Booking Section */
+
+.booking-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+  background-color: #d9d9d9;
+}
+
+.booking-section h1 {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 26px;
+  line-height: 17px;
+  letter-spacing: 1.5px;
+}
+
+.booking-form {
+  display: grid;
+  max-width: 200px;
+  gap: 20px;
+}
+
+.booking-form div {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.booking-form label {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 12px;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+}
+
+.booking-form input {
+  height: 20px;
+  border: 1px solid rgb(101, 100, 100);
+  border-radius: 5px;
+  background: white;
+}
+
+.booking-form select {
+  height: 25px;
+  border: 1px solid rgb(101, 100, 100);
+  border-radius: 5px;
+  background: white;
+}
+
+/* booking comfirmation */
+.booking-comfirmation {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  height: 400px;
+}
+
+.booking-comfirmation div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.booking-comfirmation div h1 {
+  font-weight: 700;
+  font-size: 30px;
+  margin-bottom: 0px;
+  color: #03291c;
+}
+
+.booking-comfirmation div h4 {
+  font-weight: 500;
+  font-size: 18px;
+  margin-top: 0px;
+  color: #495e57;
+}
+
+/*errors*/
+.error-field-input {
+  color: red;
+}
+
+/*Responsive*/
+@media screen and (min-width: 768px) {
+  header {
+    flex-direction: row;
+    justify-content: center;
+    height: 406px;
+  }
+
+  header p {
+    max-width: 350px;
+  }
+
+  .header-image {
+    height: 325px;
+    width: 350px;
+  }
+
+  .header-image img {
+    border-radius: 25px;
+  }
+
+  /* Specials Sections */
+  .specials-section {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto, 1fr;
+    margin: 0px auto;
+    grid-template-areas:
+      "specials-title specials-button"
+      "specials-cards specials-cards";
+  }
+
+  .specials-section-title {
+    display: flex;
+    width: 100%;
+    justify-content: left;
+    padding-left: 50px;
+  }
+
+  .specials-section-button {
+    display: flex;
+    width: 100%;
+    justify-content: right;
+    padding-right: 50px;
+  }
+
+  .specials-section-cards {
+    flex-direction: row;
+  }
+
+  /* Testimonials Sections */
+  div .testimonial-section .testimonials-list {
+    flex-direction: row;
+    max-width: 750px;
+  }
+
+  /* Little Lemon Section */
+  .little-lemon-section {
+    flex-direction: row;
+    gap: 30px;
+  }
+
+  /* Footer */
+  footer {
+    flex-direction: row;
+    gap: 25px;
+  }
+
+  footer .footer-menu {
+    height: 210px;
+    width: auto;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .container-menu div.btnMenu {
+    display: none;
+  }
+
+  .container-menu div.menu-list {
+    display: flex;
+  }
+
+  nav {
+    justify-content: center;
+  }
+
+  ul.menu {
+    flex-direction: row;
+    justify-content: center;
+    gap: 25px;
+  }
+}
